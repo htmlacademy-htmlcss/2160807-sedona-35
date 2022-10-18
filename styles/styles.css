@@ -68,7 +68,7 @@ text-transform: uppercase;
 }
 
 .images{
-  background-image:url(/images/Vector.png),url('/images/mountains.jpg');
+  background-image:url("../images/Vector.png"),url("../images/mountains.jpg");
   background-repeat: no-repeat;
   background-position:50% 100%, 50% 50%;
 }
@@ -136,7 +136,7 @@ text-align: center;
 
 }
 .mailing{
-  background-image: url(/images/background-footer.jpg);
+  background-image: url("../images/background-footer.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   height: 415px;
