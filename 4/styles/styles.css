@@ -86,6 +86,7 @@ text-transform: uppercase;
   background-repeat: no-repeat;
   background-position:50% 100%, 50% 50%;
   margin: 0%;
+  margin-top: -20px;
 }
 .intro-images-welcome{
   padding-top: 37px;
@@ -182,33 +183,41 @@ text-decoration: none;
 color: black;
 
 }
+.navigation-site{
+display: flex;
+margin: 0;
+width: 507px;
+margin-left: 70px;
+
+}
 .navigation{
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  width: 339px;
+  margin: 0;
+  margin-left: 30px;
 
 }
 .navigation-list{
   display: flex;
-
   height: 64px;
-  padding-left: 70px;
   width: 507px;
   margin: 0;
+  padding: 0;
 
 }
 .navigation-user{
   display:flex;
+  margin: 0;
   margin-left: auto;
   padding-right: 70px;
   height: 64px;
-  margin: 0;
+
 
 
 }
 .navigation-item{
 
-  margin: 0 auto;
+  margin: 0 ;
   padding-top: 20px;
   padding-left: 16px;
 }
@@ -263,13 +272,26 @@ header{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 30px;
 
 
 }
-.footer-social{
-  padding-left: 70px;
+.footer-social-list{
+  margin-left: 70px;
   display: flex;
+  width:142px;
+  padding: 0;
+}
+.footer-phone{
+  width: 331px;
+  margin: 0;
+
 }
 .footer-html{
   padding-right: 70px;
+  width: 115px;
+margin: 0;
+}
+.mailing-form{
+  margin-top: 54px;
 }
