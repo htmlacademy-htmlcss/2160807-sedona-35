@@ -55,6 +55,9 @@ body {
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .buttom-want-here{
   font-family: inherit;
@@ -67,6 +70,7 @@ body {
   text-decoration: none;
 align-self: center;
 padding: 8px 34px;
+margin-top: 14px;
 
 
 }
@@ -203,6 +207,7 @@ margin-left: 70px;
   width: 507px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 
 }
 .navigation-user{
@@ -216,9 +221,7 @@ margin-left: 70px;
 
 }
 .navigation-item{
-
   margin: 0 ;
-  padding-top: 20px;
   padding-left: 16px;
 }
 header{
@@ -226,10 +229,18 @@ header{
   margin: 0%;
 }
 
-.visually-hidden{
-  display: none;
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
+
 .advantages-list{
   display: grid;
   grid-template-columns: 400px 400px 400px ;
@@ -281,6 +292,7 @@ header{
   display: flex;
   width:142px;
   padding: 0;
+  flex-wrap: wrap;
 }
 .footer-phone{
   width: 331px;
@@ -294,4 +306,13 @@ margin: 0;
 }
 .mailing-form{
   margin-top: 54px;
+}
+.navigation-user .navigation-link{
+  min-width: 44px;
+
+}
+.footer-social-list .buttom-social{
+  min-width: 47px;
+  min-height: 40px;
+  display: block;
 }
