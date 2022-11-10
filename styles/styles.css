@@ -59,10 +59,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.navigation-link:hover{
-  border-bottom: 2px solid #756257;
-  position: relative;
-}
+
 .buttom-want-here{
   font-family: inherit;
   font-size: 16px;
@@ -90,7 +87,7 @@ text-transform: uppercase;
 }
 
 .images{
-  background-image:url("../images/Vector.png"),url("../images/mountains.jpg");
+  background-image:url("./images/Vector.png"),url("./images/mountains.jpg");
   background-repeat: no-repeat;
   background-position:50% 100%, 50% 50%;
   margin: 0%;
@@ -172,7 +169,7 @@ display: block;
 
 }
 .mailing{
-  background-image: url("../images/background-footer.jpg");
+  background-image: url("./images/background-footer.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   height: 415px;
@@ -288,7 +285,7 @@ header{
   grid-row: 4;
 padding-top: 158px;
 
-background-image: url("../images/house-icon.svg");
+background-image: url("./images/house-icon.svg");
 background-repeat: no-repeat;
 background-position-y:80px;
 background-position-x: center;
@@ -303,7 +300,7 @@ background-position-x: center;
   margin: 0;
   padding-top: 158px;
 
-  background-image: url("../images/burger.svg");
+  background-image: url("./images/burger.svg");
 background-repeat: no-repeat;
 background-position-y:80px;
 background-position-x: center;
@@ -317,7 +314,7 @@ background-position-x: center;
   grid-row: 4;
   padding-top: 158px;
 
-  background-image: url("../images/gift-icon.svg");
+  background-image: url("./images/gift-icon.svg");
 background-repeat: no-repeat;
 background-position-y:80px;
 background-position-x: center;
@@ -368,7 +365,7 @@ margin: 0;
   display: block;
 }
 .navigation-user .navigation-item:nth-child(1) .navigation-link{
-  background-image:url("../images/search.png");
+  background-image:url("./images/search.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -376,7 +373,7 @@ margin: 0;
   padding: 0;
 }
 .navigation-user .navigation-item:nth-child(2) .navigation-link{
-  background-image:url("../images/heart-icon.png");
+  background-image:url("./images/heart-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -385,7 +382,7 @@ margin: 0;
   margin-right: 20px;
 }
 .footer-social-item:nth-child(1) .buttom-social{
-  background-image:url("../images/vk.png");
+  background-image:url("./images/vk.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -393,7 +390,7 @@ margin: 0;
   padding: 0;
 }
 .footer-social-item:nth-child(2) .buttom-social{
-  background-image:url("../images/telegram.png");
+  background-image:url("./images/telegram.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -401,7 +398,7 @@ margin: 0;
   padding: 0;
 }
 .footer-social-item:nth-child(3) .buttom-social{
-  background-image:url("../images/youtube.png");
+  background-image:url("./images/youtube.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -454,4 +451,29 @@ margin: 0;
   margin-left: -30px;
   background-color:rgba(0, 0, 0, 0.3);
   content: "";
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+.modal-search-hotel{
+width: 717px;
+}
+.modal-close-buttom{
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color:#F2F2F2;
+  border: none;
+  background-image: url("./images/closer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
