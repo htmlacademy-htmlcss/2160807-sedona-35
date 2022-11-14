@@ -171,11 +171,43 @@
 </footer>
 <div class="modal-container">
   <div class="modal modal-search-hotel">
-    <button class="modal-close-buttom">
+    <button class="modal-close-buttom" title="Закрыть">
       <span class="visually-hidden">Закрыть</span>
     </button>
     <section class="modal-content">
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post" >
+      <p class="field-group">
+        <label for="date-check-in">Дата Заезда:</label>
+        <input class="search-hotel-form-field field date-check-in" type="text" id="date-check-in" value="27 апреля 2020">
+        <label for="date-check-in" class="check-in-label">Мы не можем отправить вас в прошлое.</label>
+      </p>
+      <p class="field-group">
+        <label for="date-check-out">Дата Выезда:</label>
+        <input class="search-hotel-form-field field date-check-out" type="text" id="date-check-out" value="1 сентября 2023">
+        <label for="date-check-out" class="check-out-label">На эти даты есть свободные номера. Пока есть.</label>
+      </p>
+      <p class="field-group form-number-people">
+       <label for="number-people">Взрослые:</label>
+       <input type="button" class="number-people-minus minus"  id="number-people">
+       <input class="number-people-digit" type="text" id="number-people" value="2">
+       <input type="button" class="number-people-plus plus"   id="number-people">
+      </p>
+      <p class="field-group form-number-children">
+        <label for="number-children">Дети:</label>
+        <button class="number-children-info">i</button>
+        <input type="button" class="number-children-minus minus"  id="number-children">
+        <input class="number-children-digit" type="text" id="number-children" value="2">
+        <input type="button" class="number-children-plus plus"   id="number-children">
+       </p>
+       <div class="children-info">
+       <p class="children-info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</p>
+       </div>
+       <p class="field-group button-search">
+        <button type="submit" placeholder="Найти" >Найти</button>
+      </p>
+      </form>
+
     </section>
 
   </div>

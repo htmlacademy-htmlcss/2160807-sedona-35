@@ -453,6 +453,7 @@ margin: 0;
   content: "";
 }
 .modal-container {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -460,9 +461,25 @@ margin: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+
+
+}
+.modal-content{
+  height: 448px;
+    width: 577px;
+    margin: 0 auto;
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
 }
 .modal-search-hotel{
 width: 717px;
+max-height: 576px;
+border-radius: 30px;
+padding: 64px 0;
 }
 .modal-close-buttom{
   position: absolute;
@@ -472,8 +489,186 @@ width: 717px;
   height: 52px;
   background-color:#F2F2F2;
   border: none;
+  border-radius: 50%;
   background-image: url("./images/closer.png");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+.modal-title{
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+.field-group{
+  margin-bottom: 23px;
+  margin-top: 0;
+}
+.search-hotel-form{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+}
+.date-check-in{
+  margin-left: 24px;
+}
+.date-check-out{
+  margin-left: 18px;
+}
+
+.search-hotel-form-field{
+  width: 398px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding: 0;
+padding-left: 20px;
+font-size: 18px;
+line-height: 24px;
+font-weight: 700;
+background-image: url("./images/calendar.png");
+background-repeat: no-repeat;
+background-position-x:386px;
+background-position-y: center;
+
+}
+.check-in-label{
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  margin-left: 157px;
+  padding: 0 20px;
+  font-weight: 400;
+}
+.check-out-label{
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 157px;
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.form-number-people{
+  display: flex;
+  margin-bottom: 48px;
+}
+.form-number-people input{
+  width: 40px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+}
+.form-number-children{
+  display: flex;
+margin-bottom: 48px;
+}
+.form-number-children input{
+  width: 40px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+}
+.number-children-info{
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  margin:auto 0;
+  margin-right: 46px;
+}
+.button-search button{
+  width: 577px;
+  height: 60px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+color: white;
+text-transform: uppercase;
+font-size: 20px;
+line-height: 24px;
+font-weight: 700;
+cursor: pointer;
+}
+.plus{
+  background-image:url("./images/plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  height: 100%;
+  padding: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+.minus{
+  background-image:url("./images/minus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  height: 100%;
+  padding: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  cursor: pointer;
+}
+.form-number-people label{
+  margin: auto 0;
+margin-right: 50px;
+}
+.form-number-children label{
+  margin: auto 0;
+margin-right: 10px;
+}
+.children-info{
+
+  position: absolute;
+  width: 256px;
+  height: 143px;
+  right: 127px;
+  top: 390px;
+
+}
+
+.children-info-text{
+  display:block;
+  background-color:#333333;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 15px;
+  padding-left: 22px;
+  padding-bottom: 18px;
+  padding-right: 18px;
+  border-radius: 10px;
+  margin: 0;
+}
+.children-info::before{
+  content: url("./images/triangle.svg");
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 117px;
+  height: 18px;
 }
