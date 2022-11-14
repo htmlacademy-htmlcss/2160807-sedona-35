@@ -638,19 +638,19 @@ margin-right: 50px;
 }
 .form-number-children label{
   margin: auto 0;
-margin-right: 10px;
+margin-right: 82px;
 }
-.children-info{
-
+.tooltip{
   position: absolute;
-  width: 256px;
-  height: 143px;
-  right: 127px;
-  top: 390px;
-
+left: 455px;
+top:365px;
 }
-
 .children-info-text{
+  position: absolute;
+  width: 216px;
+  height: 125px;
+  right: -75px;
+  top: 40px;
   display:block;
   background-color:#333333;
   color: white;
@@ -663,12 +663,18 @@ margin-right: 10px;
   padding-right: 18px;
   border-radius: 10px;
   margin: 0;
+  display: none;
 }
-.children-info::before{
+.tooltip span::before{
   content: url("./images/triangle.svg");
   display: block;
   margin: 0;
   padding: 0;
-  padding-left: 117px;
   height: 18px;
+position: absolute;
+top: -15px;
+right: 50%;
+}
+.tooltip button:hover + .children-info-text{
+  display: block;
 }
