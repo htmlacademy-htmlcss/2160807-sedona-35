@@ -78,10 +78,7 @@ margin-top: 14px;
 border-radius: 4px;
 
 }
-ul{
-  list-style-type: none;
-}
-h2{
+.navigation h2{
   font-size: 30px;
 line-height: 36px;
 font-weight: 700;
@@ -117,6 +114,11 @@ text-align: center;
       .intro{
         padding-top: 69px;
         padding-bottom: 25px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
       }
 
 .advantage-title{
@@ -146,6 +148,11 @@ text-align: center;
 }
 .search-hotel-title{
   padding-top: 96px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 
 }
 
@@ -185,6 +192,11 @@ display: block;
 }
 .mailing-title{
 padding-top: 96px;
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
 }
 .buttom-mailing{
   background-color: #82B3D3;
@@ -220,6 +232,7 @@ margin-left: 70px;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  list-style-type: none;
 
 }
 .navigation-user{
@@ -228,7 +241,7 @@ margin-left: 70px;
   margin-left: auto;
   padding-right: 70px;
   height: 64px;
-
+  list-style-type: none;
 
 
 }
@@ -236,7 +249,7 @@ margin-left: 70px;
   margin: 0 ;
   padding-left: 16px;
 }
-header{
+.main-header{
   display: flex;
   margin: 0%;
   height: 64px;
@@ -265,6 +278,7 @@ header{
   justify-content: center;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 
 }
 .advantages-img1{
@@ -341,6 +355,7 @@ background-position-x: center;
   width:142px;
   padding: 0;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 .footer-phone{
   width: 331px;
@@ -367,7 +382,7 @@ margin: 0;
   min-height: 40px;
   display: block;
 }
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
+.navigation-user .navigation-item:nth-child(1){
   background-image:url("../images/search.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -375,7 +390,7 @@ margin: 0;
   height: 100%;
   padding: 0;
 }
-.navigation-user .navigation-item:nth-child(2) .navigation-link{
+.navigation-user .navigation-item:nth-child(2){
   background-image:url("../images/heart-icon.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -502,6 +517,10 @@ padding: 64px 0;
   text-align: start;
   margin-top: 0;
   margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .field-group{
   margin-bottom: 23px;
