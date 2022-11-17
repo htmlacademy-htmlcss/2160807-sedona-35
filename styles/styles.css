@@ -83,15 +83,17 @@ text-transform: uppercase;
   background-position:50% 100%, 50% 50%;
   margin: 0%;
   margin-top: -20px;
-  height: 485px;
+  height: 471px;
 }
 .intro-images-welcome{
   padding-top: 37px;
 text-align: center;
+margin-bottom: 0;
 }
 .intro-images-to-the{
   text-align: center;
   margin-bottom: 54px;
+  margin-top: 0;
   }
   .intro-images-sedona{
     text-align: center;
@@ -121,10 +123,13 @@ text-align: center;
   line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 62px;
-  margin-top: 93px;
+  margin-top: 82px;
 
 }
-
+.advantages-discription{
+  font-size: 18px;
+  line-height: 21px;
+}
 
 .color-1{
   background-color: #82B3D3;
@@ -145,6 +150,7 @@ text-align: center;
 }
 .search-hotel-title{
   padding-top: 96px;
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -153,6 +159,8 @@ text-align: center;
 
 }
 .search-hotel-text{
+  margin-top: 20px;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -166,7 +174,7 @@ display: block;
   background-color:#756157 ;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 50px;
+  padding: 8px 0;
   margin: 0 auto;
   width: 376px;
   text-align: center;
@@ -190,19 +198,30 @@ width: 1200px;
   background-size:cover;
   color: white;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 1200px;
 
 }
 .mailing-title{
-padding-top: 96px;
+  margin: 0;
+padding-top: 93px;
 font-size: 30px;
 line-height: 36px;
 font-weight: 700;
 text-align: center;
 text-transform: uppercase;
 }
+.mailing p{
+  font-size: 22px;
+  line-height: 26px;
+}
+.mailing-form input{
+ padding-left: 20px;
+ font-size: 18px;
+ line-height: 24px;
+}
 .button-mailing{
+  font-size: 20px;
   background-color: #82B3D3;
   text-align: center;
 color: white;
@@ -219,8 +238,6 @@ color: black;
 display: flex;
 margin: 0;
 width: 507px;
-margin-left: 70px;
-
 }
 .navigation{
   display: flex;
@@ -251,19 +268,21 @@ margin-left: 70px;
 }
 .navigation-list .navigation-item{
   margin: 0 ;
-  padding-left: 16px;
+  padding-left: 15px;
+  padding-right: 16px;
 }
 .main-header{
   display: flex;
   margin: 0%;
   min-height: 64px;
   background-color: white;
-  justify-content: center;
+  justify-content: space-between;
   width: 1200px;
 }
 .logo{
   position: relative;
   z-index: 1;
+  margin-left: 70px;
 }
 
 .visually-hidden {
@@ -350,9 +369,10 @@ background-position-x: center;
 }
 .footer-social-list{
   margin: 0;
-  margin-left: 70px;
+  margin-top: 12px;
+  margin-left: 94px;
   display: flex;
-  width:142px;
+  min-width:142px;
   padding: 0;
   flex-wrap: wrap;
   list-style-type: none;
@@ -363,10 +383,10 @@ background-position-x: center;
   padding-top: 10px;
 }
 .footer-html{
-  padding-right: 70px;
+  padding-right: 92px;
   width: 115px;
 margin: 0;
-padding-top: 10px;
+padding-top: 16px;
 }
 .mailing-form{
   margin-top: 54px;
@@ -405,7 +425,7 @@ padding-top: 10px;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 64px;
+  height: 40px;
   padding: 0;
 }
 .footer-social-item:nth-child(2) .buttom-social{
@@ -413,7 +433,7 @@ padding-top: 10px;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 64px;
+  height: 40px;
   padding: 0;
 }
 .footer-social-item:nth-child(3) .buttom-social{
@@ -421,7 +441,7 @@ padding-top: 10px;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 64px;
+  height: 40px;
   padding: 0;
 }
 .mailing input{
