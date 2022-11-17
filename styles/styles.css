@@ -4,31 +4,18 @@
 
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
+
 html{
   height: 100%;
 }
@@ -42,16 +29,19 @@ body {
   font-size: 18;
   line-height: 21px;
   color: black;
-  background-color: white;
+  background-color: #F2F2F2;
   padding-left: 40px;
   padding-right: 40px;
   min-width: 1200px;
+  align-items: center;
 }
-.main-conteiner{
+.main-container{
   flex-grow: 1;
+  background-color: white;
+  width: 1200px;
 }
 .navigation-link{
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: black;
@@ -63,7 +53,7 @@ body {
   padding-bottom: 20px;
 }
 
-.buttom-want-here{
+.button-want-here{
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -87,11 +77,13 @@ text-transform: uppercase;
 }
 
 .images{
-  background-image:url("../images/Vector.png"),url("../images/mountains.jpg");
+  background-color: #c1e1f7;
+  background-image:url("../images/vector.png"),url("../images/mountains.jpg");
   background-repeat: no-repeat;
   background-position:50% 100%, 50% 50%;
   margin: 0%;
   margin-top: -20px;
+  height: 485px;
 }
 .intro-images-welcome{
   padding-top: 37px;
@@ -110,6 +102,7 @@ text-align: center;
       font-size: 22px;
       line-height: 26px;
       padding-bottom: 90px;
+      margin: 0;
     }
       .intro{
         padding-top: 69px;
@@ -119,6 +112,7 @@ text-align: center;
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
+        margin: 0;
       }
 
 .advantage-title{
@@ -127,7 +121,7 @@ text-align: center;
   line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 62px;
-  margin-top: 0;
+  margin-top: 93px;
 
 }
 
@@ -146,6 +140,9 @@ text-align: center;
 .color-4{
   background-color: rgba(131, 179, 211, 0.2);
 }
+.search-hotel{
+  margin-bottom: 96px;
+}
 .search-hotel-title{
   padding-top: 96px;
   font-size: 30px;
@@ -155,9 +152,7 @@ text-align: center;
   text-transform: uppercase;
 
 }
-
-
-.search-hotel-p{
+.search-hotel-text{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -176,9 +171,18 @@ display: block;
   width: 376px;
   text-align: center;
   border-radius: 4px;
+}
+.page-footer{
+  background-color: white;
+height: 535px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 1200px;
 
 }
 .mailing{
+  background-color:#756157;
   background-image: url("../images/background-footer.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -186,8 +190,8 @@ display: block;
   background-size:cover;
   color: white;
   text-align: center;
-  margin-top: 96px;
   margin-bottom: 40px;
+  width: 1200px;
 
 }
 .mailing-title{
@@ -198,7 +202,7 @@ font-weight: 700;
 text-align: center;
 text-transform: uppercase;
 }
-.buttom-mailing{
+.button-mailing{
   background-color: #82B3D3;
   text-align: center;
 color: white;
@@ -220,15 +224,15 @@ margin-left: 70px;
 }
 .navigation{
   display: flex;
-  width: 339px;
+  min-width: 339px;
   margin: 0;
   margin-left: 30px;
 
 }
 .navigation-list{
   display: flex;
-  height: 64px;
-  width: 507px;
+  min-height: 64px;
+  min-width: 507px;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -238,11 +242,11 @@ margin-left: 70px;
 .navigation-user{
   display:flex;
   margin: 0;
-  margin-left: auto;
+  margin-left: 288px;
   padding-right: 70px;
-  height: 64px;
+  min-height: 64px;
   list-style-type: none;
-
+  min-width: 268px;
 
 }
 .navigation-list .navigation-item{
@@ -252,7 +256,10 @@ margin-left: 70px;
 .main-header{
   display: flex;
   margin: 0%;
-  height: 64px;
+  min-height: 64px;
+  background-color: white;
+  justify-content: center;
+  width: 1200px;
 }
 .logo{
   position: relative;
@@ -279,7 +286,6 @@ margin-left: 70px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
 .advantages-img1{
   grid-column: 2/span3;
@@ -294,14 +300,14 @@ margin-left: 70px;
 }
 .advantages-item{
   text-align: center;
-  padding-top: 103px;
-  padding-bottom: 121px;
+  padding: 10px;
+  min-width: 364px;
+  min-height: 360px;
 }
+
 .home{
   grid-column: 1;
   grid-row: 4;
-padding-top: 158px;
-
 background-image: url("../images/house-icon.svg");
 background-repeat: no-repeat;
 background-position-y:80px;
@@ -309,14 +315,12 @@ background-position-x: center;
 }
 .home .advantage-title{
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 172px;
 }
 .food{
   grid-column: 2;
   grid-row: 4;
   margin: 0;
-  padding-top: 158px;
-
   background-image: url("../images/burger.svg");
 background-repeat: no-repeat;
 background-position-y:80px;
@@ -324,13 +328,11 @@ background-position-x: center;
 }
 .food .advantage-title{
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 172px;
 }
 .gift{
   grid-column: 3;
   grid-row: 4;
-  padding-top: 158px;
-
   background-image: url("../images/gift-icon.svg");
 background-repeat: no-repeat;
 background-position-y:80px;
@@ -338,15 +340,13 @@ background-position-x: center;
 }
 .gift .advantage-title{
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 172px;
 }
 .footer-bottom{
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-bottom: 30px;
-
-
+  width: 1245px;
 }
 .footer-social-list{
   margin: 0;
@@ -360,12 +360,13 @@ background-position-x: center;
 .footer-phone{
   width: 331px;
   margin: 0;
-
+  padding-top: 10px;
 }
 .footer-html{
   padding-right: 70px;
   width: 115px;
 margin: 0;
+padding-top: 10px;
 }
 .mailing-form{
   margin-top: 54px;
@@ -387,7 +388,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 100%;
+  height: 64px;
   padding: 0;
 }
 .navigation-user .navigation-item:nth-child(2){
@@ -395,7 +396,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 100%;
+  height: 64px;
   padding: 0;
   margin-right: 20px;
 }
@@ -404,7 +405,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 100%;
+  height: 64px;
   padding: 0;
 }
 .footer-social-item:nth-child(2) .buttom-social{
@@ -412,7 +413,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 100%;
+  height: 64px;
   padding: 0;
 }
 .footer-social-item:nth-child(3) .buttom-social{
@@ -420,7 +421,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  height: 100%;
+  height: 64px;
   padding: 0;
 }
 .mailing input{
@@ -543,7 +544,7 @@ justify-content: space-between;
 }
 
 .search-hotel-form-field{
-  width: 398px;
+  width: 414px;
   height: 48px;
   border: none;
   border-radius: 4px;
@@ -555,7 +556,7 @@ line-height: 24px;
 font-weight: 700;
 background-image: url("../images/calendar.png");
 background-repeat: no-repeat;
-background-position-x:386px;
+background-position-x:400px;
 background-position-y: center;
 
 }
@@ -639,9 +640,11 @@ cursor: pointer;
   display: block;
   height: 100%;
   padding: 0;
+  border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   cursor: pointer;
+  width: 40px;
 }
 .minus{
   background-image:url("../images/minus.png");
@@ -650,9 +653,11 @@ cursor: pointer;
   display: block;
   height: 100%;
   padding: 0;
+  border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   cursor: pointer;
+  width: 40px;
 }
 .form-number-people label{
   margin: auto 0;
