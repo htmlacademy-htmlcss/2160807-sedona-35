@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
       <div class="navigation-site">
-        <img src="images/logo-sedona.png"  width="140" height="70" alt="logo" class="logo">
+        <img src="images/logo-sedona.png"  width="140" height="70" alt="logo." class="logo">
         <nav class="navigation">
           <h2 class="visually-hidden">Навигация сайта</h2>
           <ul class="navigation-list">
@@ -20,7 +22,6 @@
            </li>
            <li class="navigation-item">
             <a class="navigation-link" href="#">Гостиницы</a>
-           </li>
           </ul>
         </nav>
       </div>
@@ -37,19 +38,18 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link buttom-want-here"  href="#">
+          <a class="navigation-link button-want-here"  href="#">
              Хочу сюда!
           </a>
         </li>
       </ul>
     </header>
-<main class="main-conteiner main-index">
+<main class="main-container main-index">
   <h1 class="visually-hidden">SEDONA</h1>
   <div class="images">
-   <p class="intro-images-welcome"> <img src="images/welcome.png" alt="welcome" width="188" height="45"></p>
-   <p class="intro-images-to-the"><img src="images/to_the_gorgeous.png" alt="to the gorgeous" width="256" height="29"></p>
-   <p class="intro-images-sedona"> <img src="images/sedona.png" alt="sedona" width="457" height="213"></p>
-
+    <img src="images/welcome.png" class="intro-images-welcome" alt="welcome." width="188" height="45">
+   <img src="images/to_the_gorgeous.png" class="intro-images-to-the" alt="to the gorgeous." width="256" height="29">
+   <img src="images/sedona.png" class="intro-images-sedona" alt="sedona." width="457" height="213">
   </div>
   <section class="intro-advantages">
     <h2 class="intro">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -63,7 +63,7 @@
 
      </li>
      <li class="advantages-img1">
-       <img src="images/house.jpg" width="800" height="384" alt="Домик в Седоне">
+       <img src="images/house.jpg" width="800" height="384" alt="Домик в Седоне.">
      </li>
 
      <li class="advantages-item color-2">
@@ -82,7 +82,7 @@
 
      </li>
      <li class="advantages-img2">
-       <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола">
+       <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
      </li>
      <li class="advantages-item color-1 devil">
        <h3 class="advantage-title ">Там есть<br>мост дьявола</h3>
@@ -106,7 +106,7 @@
   </section>
   <section class="search-hotel">
     <h2 class="search-hotel-title">Заинтересовались?</h2>
-    <p class="search-hotel-p">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="bottom-search-hotel" href="#">Поиск гостиницы в Седоне</a>
   </section>
 
@@ -116,10 +116,10 @@
 <footer class="page-footer">
   <div class="mailing">
     <h2 class="mailing-title">Подпишитесть на рассылку</h2>
-    <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+    <p>Только полезная информация и никакого<br> спама,честное бойскаутское!</p>
     <form action=" https://echo.htmlacademy.ru/" method="post" class="mailing-form">
-      <input type="text" name="mailing" placeholder="    Ваш e-mail">
-      <button class="buttom-mailing" type="submit">Подписаться</button>
+      <input type="text" name="mailing" placeholder="Ваш e-mail" required>
+      <button class="button-mailing" type="submit">Подписаться</button>
     </form>
   </div>
 <div class="footer-bottom">
@@ -140,14 +140,10 @@
     </a>
   </li>
 </ul>
-<p class="footer-phone">
-  <a href="tel:88128121212">+7-812-812-12-12</a>
-</p>
-  <p class="footer-html">
-    <a href="https://htmlacademy.ru/">
-      <img src="images/HTML_Academy.png" width="115" height="33" alt="Логотип HTML-Academy">
-    </a>
-  </p>
+  <a href="tel:88128121212" class="footer-phone">+7 (812) 812-12-12</a>
+  <a href="https://htmlacademy.ru/" class="footer-html">
+
+  </a>
 </div>
 </footer>
 <div class="modal-container">
@@ -160,25 +156,25 @@
       <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post" >
       <p class="field-group">
         <label for="date-check-in">Дата Заезда:</label>
-        <input class="search-hotel-form-field field date-check-in" type="text" id="date-check-in" value="27 апреля 2020">
+        <input class="search-hotel-form-field field date-check-in" type="text" id="date-check-in" value="27 апреля 2020" required>
         <label for="date-check-in" class="check-in-label">Мы не можем отправить вас в прошлое.</label>
       </p>
       <p class="field-group">
         <label for="date-check-out">Дата Выезда:</label>
-        <input class="search-hotel-form-field field date-check-out" type="text" id="date-check-out" value="1 сентября 2023">
+        <input class="search-hotel-form-field field date-check-out" type="text" id="date-check-out" value="1 сентября 2023" required>
         <label for="date-check-out" class="check-out-label">На эти даты есть свободные номера. Пока есть.</label>
       </p>
       <p class="field-group form-number-people">
        <label for="number-people">Взрослые:</label>
-       <input type="button" class="number-people-minus minus" value="-1" >
-       <input class="number-people-digit" type="text" id="number-people" value="2">
-       <input type="button" class="number-people-plus plus"  value="1" >
+       <button class="number-people-minus minus"></button>
+       <input class="number-people-digit" type="text" id="number-people" value="2" required>
+       <button class="number-people-plus plus" ></button>
       </p>
       <p class="field-group form-number-children">
         <label for="number-children">Дети:</label>
-        <input type="button" class="number-children-minus minus"  value="-1">
-        <input class="number-children-digit" type="text" id="number-children" value="2">
-        <input type="button" class="number-children-plus plus"  value="1">
+        <button class="number-children-minus minus" ></button>
+        <input class="number-children-digit" type="text" id="number-children" value="2" required>
+        <button class="number-children-plus plus" ></button>
        </p>
        <span class="tooltip">
         <button class="number-children-info">i</button>
